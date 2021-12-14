@@ -1,0 +1,71 @@
+*{  margin:0;
+     padding:0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+.container{
+    width:90%;
+    max-width: 1100px;
+    overflow:hidden;
+    margin:auto;/*important when use container*/
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ul.menu-left {
+    display: flex;
+    flex:1;
+}
+ul.menu-right{
+    display: flex;
+}
+.main-nav li{
+    list-style-type: none;
+    margin-left:25px;
+}
+.main-nav li a{
+    text-decoration: none;
+}
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+  }
+  .btn{
+      font-weight: bold;
+      padding: 10px 20px;
+      background: #262626;
+      color: #fff;
+       font-size: 15px;
+  }
+  .showcase a{
+      text-decoration: none;
+      margin-top: 10px;
+  }
+  .btn:hover{
+      opacity:0.9;
+  }
+.showcase{
+    width:100%;
+    height:400px;
+    background-image: url('https://i.ibb.co/zGSDGCL/slide1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     justify-content: flex-end;
+     padding-bottom: 50px;
+     margin-bottom:20px;
+}
+.showcase h2{
+    line-height: 2.5rem;
+}
