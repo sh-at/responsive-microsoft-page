@@ -9,6 +9,7 @@
     <title>microsoft page</title>
 </head>
 <body>
+  <div class="menu-btn"><i class="fas fa-bars fa-2x"></i></div>
     <div class="container">
         <nav class="main-nav">
             <img src="https://i.ibb.co/wwLhz98/logo.png" alt="Microsoft" class="logo">
@@ -212,5 +213,9 @@
           </ul>
         </div>
       </footer>
+          <!--the "show" class is added with "main-nav" class with help of java script-->
+      <script>
+      document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.menu-left').classList.toggle('show'));
+      </script>
 </body>
 </html>
