@@ -14,6 +14,7 @@ body {
     overflow:hidden;
     margin:auto;/*important when use container*/
 }
+
 .main-nav{
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,13 @@ ul.menu-right{
 .main-nav ul li a:hover {
     border-bottom: 2px solid #262626;
   }
+  .menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top:20px;
+    right:30px;
+    display: none;
+}
   .btn{
       font-weight: bold;
       padding: 10px 20px;
@@ -164,7 +172,37 @@ font-weight: bold;
         list-style-type: none;
         margin-right:10px;
     }
-     @media (max-width:768px){
+     @media (max-width:700px){
+         .menu-btn{
+             display: block;
+         }
+         .menu-btn:hover i{
+             opacity: 0.5;
+         }
+         .main-nav ul.menu-right{
+              margin-right: 50px;
+         }
+        .main-nav ul.menu-left{
+             display:block;
+             position:absolute;
+             width:35%;            /*position absolute required(Top,L,R)*/
+             height: 100%;
+             top:0;
+             left:0;
+             padding-top: 20px;
+             border-right: #616161 1px solid;
+             transform:translateX(-500px);
+             transition: transform 0.5s ease-in-out;
+             background-color: #f2f2f2;
+             }
+             .main-nav ul.menu-left.show{
+                transform:translateX(-20px);
+             }
+             .main-nav ul.menu-left li{
+                 border-bottom: #ccc 1px solid;
+                 padding-top:20px;
+                 font-size: 14px;
+             }
         .cards{
         grid-template-columns: repeat(2,1fr);
            }
